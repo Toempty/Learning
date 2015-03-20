@@ -1,0 +1,58 @@
+%插入图片
+\documentclass [UTF8]{ctexart}
+\title {pictures}
+\author {LiChao}
+\date    {June 14.2012}
+\usepackage {graphicx}
+
+\begin{document}
+\maketitle
+\part{insert a picture！}
+
+\vspace{2cm}
+
+\subsection {a little lolita!}
+
+\vspace{2cm}
+
+\includegraphics [scale=0.2]{picture/lolita}    %或者width=50mm   height=60mm 需要有单位，scale 表示比例
+
+\vspace{1cm}
+The ending!
+
+\part {a float picture with a little lolita!}
+\begin{figure} [htbp!]
+\centering
+\includegraphics [scale=0.4]{picture/lolita2}
+\caption{lolita}
+\end{figure}
+
+The ending!
+
+\vspace{4cm}
+
+\part {a little lolita with a fitted width!}
+
+The beginning!
+\begin{figure}[htbp!]
+\centering
+\includegraphics [scale=1]{picture/lolita3}
+\caption{lolita}
+\end{figure}
+
+The ending!
+
+\vspace{8cm}
+
+\part {a little lolita with a automatic width!}
+
+The beginning!
+\begin{figure}[htbp!]
+\centering
+\includegraphics [width=0.9\textwidth]{picture/lolita3}
+\caption{lolita}
+\end{figure}
+
+The ending!
+
+\end{document}

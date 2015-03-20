@@ -1,0 +1,63 @@
+%段落对齐
+\documentclass[UTF8]{ctexart}
+\title {Align the paragraph}
+\author {LiChao}
+\date{June 14,2012}
+
+\begin{document}
+\maketitle
+\part  {Align center}
+This is my first paragraph and I want to align the paragraph so that it's in the center.
+\begin{center}
+%如果居中段落在一行放不下，只会在最后一行是居中的，其它行都填满页面宽度。
+This is my second paragraph.\\
+This is my second paragraph.\\
+This is also the second paragraph,but it is longer.
+\end{center}
+
+This is my last paragraph.\\
+This is my last paragraph.
+
+This is also my last paragraph,but it is longer.
+
+
+\Large
+Pay attention to the difference between' \textbackslash \textbackslash 'and a blank line.
+\normalsize
+
+\part {alignment in the left size}
+This is my first paragraph and I want to align the paragraph so that it's in the center.
+\begin{flushleft}
+This is my second paragraph.\\
+This is my second paragraph.\\
+This is also the second paragraph,but it is longer.
+\end{flushleft}
+
+This is my last paragraph.\\
+This is my last paragraph.
+
+This is also my last paragraph,but it is longer.
+
+
+\Large
+Pay attention to the difference between' \textbackslash \textbackslash 'and a blank line.
+\normalsize
+
+\part {alignment in the right size}
+This is my first paragraph and I want to align the paragraph so that it's in the center.
+\begin{flushright}
+This is my second paragraph.\\
+This is my second paragraph.\\
+This is also the second paragraph,but it is longer.
+\end{flushright}
+
+This is my last paragraph.\\
+This is my last paragraph.
+
+This is also my last paragraph,but it is longer.
+
+
+\Large
+Pay attention to the difference between' \textbackslash \textbackslash 'and a blank line.
+\normalsize
+\end{document}

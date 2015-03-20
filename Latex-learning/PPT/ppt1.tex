@@ -1,0 +1,88 @@
+\documentclass{beamer}
+%\usetheme{Antibes}    %带顶栏的
+%\usetheme{Darmstadt}
+%\usetheme{Frankfurt}
+%\usetheme{JuanLesPins}
+%\usetheme{Montpellier}
+%\usetheme{Singapore}
+
+%\usetheme{Boadilla}  %带底栏的
+%\usetheme{Madrid}
+
+%\usetheme{AnnArbor}    %带顶栏和底栏的
+%\usetheme{Berlin}
+%\usetheme{CambridgeUS}
+\usetheme{Copenhagen}    %不错
+%\usetheme{Dresden}         %还行
+%\usetheme{Ilmenau}         %还行
+%\usetheme{Luebeck}         %还行
+%\usetheme{Malmoe}          %还行
+%\usetheme{Szeged}
+%\usetheme{Warsaw}          %还行
+
+%\usetheme{Berkeley}    %带侧栏的       还行
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Marburg}
+%\usetheme{PaloAlto}
+
+%外部主题，用以设置是否有顶栏，底栏和侧栏以及它们的结构
+%\useouttheme{default}  %default infolines miniframes sidebar smoothbars split shadow tree smoothree
+
+%内部主题，设置正文的内容（标题，列表，定理）的样式
+\useinnertheme{rounded}  %default circles rectangles rounded
+
+%颜色主题，设置文稿的各种元素配色
+\usecolortheme{default}  %default albatross beaver beetle crane dolphin dove fly lily orchid rose seagull seahorse sidebartab structure whale wolverine。
+
+%字体主题设定演示文稿的字体 
+\usefonttheme{default}  %default serif structurebold structureitalicserif  structuresmallcapsserif。
+\begin{document}
+
+\title{My first latex PPT}
+\author{LiChao}
+\date{June 16.1012}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{The menu}
+  \tableofcontents
+\end{frame}
+
+\section{The factors}
+\begin{frame}
+\frametitle{The factors}
+  \begin{enumerate}
+     \item The most important factor \pause
+     \item The second most important factor \pause
+     \item The last foctor
+  \end{enumerate}
+\end{frame}
+
+\section{The difference between different commands}
+\begin{frame}
+\frametitle{The difference between diffrerent commands}
+  \begin{enumerate}
+     \item <1-> The first step
+     \item <2-> The second step
+     \item <5-> the fifth step
+     \item <3-> the third step
+     \item <4-> the fourth step
+  \end{enumerate}
+\end{frame}
+  
+
+\section{Just do it}
+
+\begin{frame}
+\frametitle{Just do it}
+   \begin{itemize}
+      \item What to do?           \pause
+      \item Why to do?            \pause
+      \item How to do?
+   \end{itemize}
+\end{frame}
+\end{document}

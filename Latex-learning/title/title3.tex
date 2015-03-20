@@ -1,0 +1,36 @@
+%调整目录页格式
+\documentclass[UTF8]{ctexart}
+\title{set the format of the page directory}
+\author{LiChao}
+\date{June 14.2012}
+\usepackage{titletoc}
+
+\titlecontents{section}
+[10pt]
+{\filleft\bfseries\Large}
+{\contentslabel{3em}}
+{}
+{\titlerule*[1em]{$\cdot$}\contentspage}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\section{绪论}
+\subsection{为什么要研究}
+\vspace{10cm}
+\subsection{这个局面何时开始}
+\vspace{10cm}
+\section{世界各地的进展}
+\subsection{去到最热的地方}
+\vspace{10cm}
+\subsection{哪里是中心}
+\vspace{10cm}
+\subsection{什么人站在研究前沿}
+\vspace{10cm}
+\subsection{后记}
+\subsection{多种方法齐下手}
+\vspace{10cm}
+\subsection{朝着这儿努力}
+\vspace{10cm}
+
+\end{document}

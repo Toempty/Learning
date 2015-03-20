@@ -1,0 +1,60 @@
+%测试表格的生成
+\documentclass[UTF8]{ctexart}
+\title{表格}
+\author{LiChao}
+\date{June 14.2012}
+
+\begin{document}
+\maketitle
+
+%表格
+我的表格！
+
+\begin{tabular}{|l|c|r|} %l表示左对齐 ，c表示中对齐 ， r表示右对齐  |表明对应的位置有竖线
+\hline                   %表示对应的位置有横线
+左列 & 中列 & 右列 \\     %& 元素之间的分隔     \\行与行之间的分隔
+\hline
+第二行 & 第二行 & 第二行 \\
+\hline
+第三行 & 第三行 & 第三行 \\
+\hline
+
+\end{tabular}
+
+表格结束！
+
+\begin{tabular}{|l|c|r|}
+\hline
+左列& 中列& 右列\\
+\hline
+第二行& 第二行& 第二行\\
+\hline
+\multicolumn{2}{|c|}{跨越2012} & 第三行\\  %{2}指明了跨越的行数   {|c|} 指明对齐方式和边框线
+\hline
+第四行& 第四行& 第四行\\
+\hline
+\end{tabular}
+
+
+浮动表格！
+\begin{table}[htbp!] %，h（here，当前位置）、t（top，页面顶部）、b（bottom，页面底部）、p（page，单独一页）表明允
+                     %许将表格放置在哪些位置，而! 表示不管某些浮动的限制。
+\centering
+\begin{tabular}{|l|c|c|r|}
+\hline
+第一行& 第一行& 第一行& 第一行\\
+\hline
+第二行& 第二行& 第二行& 第二行\\
+\hline
+第三行& 第三行& 第三行& 第三行\\
+\hline
+第四行& 第四行& 第四行& 第四行\\
+\hline
+\end{tabular}
+\end{table}
+
+结束浮动表格！
+
+\end{document}
+
+

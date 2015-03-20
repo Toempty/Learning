@@ -1,0 +1,144 @@
+%数学函数
+\documentclass[UTF8]{ctexart}
+\title{The mathetical equation}
+\author{LiChao}
+\date{June 15.2012}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+\part{some simple equation}
+\section{The fraction}
+This is a equation with a fraction.The command is similar to the mathematical formula except that the way to input the fraction.
+\[
+  \frac{1}{x}+\frac{1}{y+z}=\frac{1}{f}
+\]
+
+\section{The square root}
+This is a equation with a square root.The command is also simliar to the mathematical formula except that the way to input the square root.
+\[
+  \sqrt{x}+\sqrt{y}=\sqrt{z}
+\]
+
+\section{The cosine and so on}
+\[
+  2\cos \pi x\sin x =\sin 2x.
+\]
+
+\section{The limit}
+\[
+  \lim_{n\to\infty}\frac{1}{n}=0
+\]
+
+\section{The integration}
+\[
+  \int \frac{1}{x} dx=ln|x|+C
+\]
+The C stands for a constant.
+
+\vspace{2cm}
+\part{The partenthesis}
+\section{The matching parenthesis}
+\[
+  \lim_{x\to 0}(1+\frac{1}{x})^x=\mathrm{e}
+\]
+
+What is the difference between the two methods to display a parenthesis? By contrast, we know that the size of the parenthesis is different.
+
+\[
+  \lim_{x\to 0}\left(1+\frac{1}{x}\right)^x=\mathrm{e}
+\]
+
+We can also set the size of the parenthesis by ourselves.Now let us have a try.
+\[
+  \Bigg< \bigg\{ \Big[ \big( just  have  a  try \big) \Big] \bigg\} \Bigg>
+\]
+
+\vspace{3cm}
+\part {Multiple line formula}
+Sometimes we have several different formulas which in the different lines.
+
+And we must use the package `amsmath'.
+\begin{gather}
+x+y=5\\
+2x+3y+z=6
+\end{gather}
+
+We can find that the two formulas don't align.In the next line we will take a measure to solve the prlblem.
+And the two formulas will be aligned after the mark `\&'.
+
+\begin{align}
+x+y&=5\\
+2x+3y+z&=6
+\end{align}
+
+There is a mark number after each formula,and I want to get rid of it.
+
+\begin{align*}
+x+y&=5\\
+5x+2y+3z&=6
+\end{align*}
+
+\vspace{2cm}
+\part{A long formula}
+We maybe come across a phenomenon that we couldn't put a formula in a only line.Faced to this phenomenon,we should use the command `split' which must be put in the the command `equation'.
+
+\begin{equation}
+\begin{split}
+f(x)=&a_1x^5+b_1x^4+c_1x^3+d_1x^2+x+\\
+     &a_2x^5+b_2x^4+c_2x^3+d_2x^2+x+\\
+     &2\cdot 1C
+\end{split}
+\end{equation}
+
+Next,we will have a formula with a big parenthesis.
+
+\begin{equation}
+\left.
+\begin{gathered}
+x+y=5\\
+x+y+z=6
+\end{gathered}
+\right \}
+\Rightarrow z=1
+\end{equation}
+
+\part{The theorem}
+Sometimes,we may want to write a theorem.We may input the theorem in the first line and the corollary in the next line.
+\subsection{The first kind}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\begin{theorem}
+if a\textgreater b and b\textgreater c,we can get that a\textgreater c.
+\end{theorem}
+\begin{corollary}
+if a\textgreater b and b\textgreater c and c\textgreater d,we can get that a\textgreater d.
+\end{corollary}
+
+\begin{theorem}
+if a\textless b and b\textless c,we can get that a\textless c.
+\end{theorem}
+\begin{corollary}
+if a\textless b and b\textless c and c\textless d,we can get that a\textless d.
+\end{corollary}
+
+\subsection{The second kind}
+\newtheorem{thrm}{Theorem}
+\newtheorem{corl}[thrm]{Corollary}
+\begin{thrm}
+if a\textgreater b and b\textgreater c,we can get that a\textgreater c.
+\end{thrm}
+\begin{corl}
+if a\textgreater b and b\textgreater c and c\textgreater d,we can get that a\textgreater d.
+\end{corl}
+
+\subsection{The third kind}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\begin{thm}
+if a\textgreater b and b\textgreater c,we can get that a\textgreater c.
+\end{thm}
+\begin{cor}
+if a\textgreater b and b\textgreater c and c\textgreater d,we can get that a\textgreater d.
+\end{cor}
+\end{document}
