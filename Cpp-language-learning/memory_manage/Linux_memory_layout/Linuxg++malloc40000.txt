@@ -1,0 +1,35 @@
+int *pp_i = (int *) malloc(sizeof(int) * 400000); // int指针指向malloc开辟的int空间
+
+5a7d607c : array end address
+5a712b80 : array start address
+5a712b78 : local int pointer p_i3
+5a712b70 : local int pointer pp_i
+5a712b68 : local int pointer p_i2
+5a712b60 : local int pointer p_i
+5a712b58 : local char pointer
+5a712b54 : local int
+5a712b50 : local const int
+.............................................................
+008d5050 : local int pointer point address(new) p_i3
+732c3010 : local int pointer point address(malloc) pp_i
+008d5030 : local int pointer point address(new) p_i2
+008d5010 : local int pointer point address(new) p_i
+.............................................................
+00602088 : static int i s_iu
+00602080 : global char pointer g_pu
+00602078 : global int i g_iu
+.............................................................
+00602068 : global char pointer g_p2
+00602060 : global char pointer  g_p
+0060205c : static int i s_i
+00602058 : global int i g_i
+.............................................................
+00400eb0 : global const int
+00400a9c : global char pointer point content g_p2
+00400a98 : global char pointer point content g_p
+00400a98 : local char pointer point content
+004006e3 : static function addresss
+004006dd : function address
+.............................................................
+00000000 : global char pointer point content g_pu
+

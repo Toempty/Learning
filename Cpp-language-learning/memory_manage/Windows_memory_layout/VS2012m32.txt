@@ -1,0 +1,34 @@
+
+009ff244 : static int i s_iu
+009ff23c : global char pointer g_pu
+009ff238 : global int i g_iu g_iu
+
+009ff00c : global char pointer g_p2
+009ff008 : global char pointer  g_p
+009ff004 : static int i s_i
+009ff000 : global int i g_i
+
+009fcad0 : global char pointer point content g_p2
+009fcacc : global char pointer point content g_p
+009fcacc : local char pointer point content str
+009fcac8 : global const int
+
+009f42b0 : static function addresss
+009f128f : function address
+.............................................................
+0041af88 : local int pointer point address(new) p_i3
+0041af48 : local int pointer point address(malloc) pp_i
+0041af08 : local int pointer point address(new) p_i2
+0041aec8 : local int pointer point address(new) p_i
+.............................................................
+002efa0c : local const int c
+002efa00 : local char pointer str
+002ef9dc : local int l_i
+002ef9d0 : local int pointer p_i
+002ef9b8 : local int pointer pp_i
+002ef9c4 : local int pointer p_i2
+002ef9ac : local int pointer p_i3
+002ef9a0 : array end address
+0022c4a4 : array start address
+.............................................................
+00000000 : global char pointer point content g_pu

@@ -1,0 +1,33 @@
+0a71c6dc : array end address
+0a6591e0 : array start address
+0a6591d8 : local int pointer p_i3
+0a6591d0 : local int pointer pp_i
+0a6591c8 : local int pointer p_i2
+0a6591c0 : local int pointer p_i
+0a6591b8 : local char pointer
+0a6591b4 : local int
+0a6591b0 : local const int
+.............................................................
+024ad8e0 : local int pointer point address(new) p_i3
+0249a050 : local int pointer point address(malloc) pp_i
+0249a030 : local int pointer point address(new) p_i2
+0249a010 : local int pointer point address(new) p_i
+.............................................................
+00602088 : static int i s_iu
+00602080 : global char pointer g_pu
+00602078 : global int i g_iu
+.............................................................
+00602068 : global char pointer g_p2
+00602060 : global char pointer  g_p
+0060205c : static int i s_i
+00602058 : global int i g_i
+.............................................................
+00400eb0 : global const int
+00400a9c : global char pointer point content g_p2
+00400a98 : global char pointer point content g_p
+00400a98 : local char pointer point content
+004006e3 : static function addresss
+004006dd : function address
+.............................................................
+00000000 : global char pointer point content g_pu
+

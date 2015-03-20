@@ -1,0 +1,35 @@
+
+0006f244 : static int i s_iu
+0006f23c : global char pointer g_pu
+0006f238 : global int i g_iu g_iu
+
+0006f00c : global char pointer g_p2
+0006f008 : global char pointer  g_p
+0006f004 : static int i s_i
+0006f000 : global int i g_i
+
+0006cad0 : global char pointer point content g_p2
+0006cacc : global char pointer point content g_p
+0006cacc : local char pointer point content str
+0006cac8 : global const int
+
+000642b0 : static function addresss
+0006128f : function address
+.............................................................
+0040af88 : local int pointer point address(new) p_i3
+0040af48 : local int pointer point address(malloc) pp_i
+0040af08 : local int pointer point address(new) p_i2
+0040aec8 : local int pointer point address(new) p_i
+.............................................................
+002dfd50 : local const int c
+002dfd44 : local char pointer str
+002dfd20 : local int l_i
+002dfd14 : local int pointer p_i
+002dfcfc : local int pointer pp_i
+002dfd08 : local int pointer p_i2
+002dfcf0 : local int pointer p_i3
+002dfce4 : array end address
+0021c7e8 : array start address
+.............................................................
+00000000 : global char pointer point content g_pu
+请按任意键继续. . .

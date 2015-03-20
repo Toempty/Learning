@@ -1,0 +1,40 @@
+00407010 : static int i s_iu
+00407008 : global char pointer g_pu
+00407000 : global int i g_iu
+
+00403408 : global const int
+
+00403034 : global char pointer point content g_p2
+00403030 : global char pointer point content g_p
+00403030 : local char pointer point content
+
+00402020 : global char pointer g_p2
+00402018 : global char pointer  g_p
+00402014 : static int i s_i
+00402010 : global int i g_i
+
+004010d6 : static function addresss
+004010d0 : function address
+
+.............................................................
+
+0022aadc : local const int
+0022aad0 : local char pointer
+0022aacc : local int
+0022aac0 : local int pointer p_i
+0022aab0 : local int pointer pp_i
+0022aab8 : local int pointer p_i2
+0022aaa8 : local int pointer p_i3
+0022aa9c : array end address
+00042620 : array start address
+
+.............................................................
+
+00023d30 : local int pointer point address(new) p_i3
+000104a0 : local int pointer point address(malloc) pp_i
+00010480 : local int pointer point address(new) p_i2
+00010460 : local int pointer point address(new) p_i
+
+.............................................................
+
+00000000 : global char pointer point content g_pu

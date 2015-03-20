@@ -1,0 +1,43 @@
+int *pp_i = (int *) malloc(sizeof(int) * 20000);
+
+021a0048 : local int pointer point address(malloc) pp_i
+
+00661df0 : local int pointer point address(new) p_i3
+00661de0 : local int pointer point address(new) p_i2
+00661dc0 : local int pointer point address(new) p_i
+
+.............................................................
+
+00406028 : static int i s_iu
+00406024 : global char pointer g_pu
+00406020 : global int i g_iu g_iu
+
+00404438 : global const int
+
+00404068 : global char pointer point content g_p2
+00404064 : global char pointer point content g_p
+00404064 : local char pointer point content str
+
+0040300c : global char pointer g_p2
+00403008 : global char pointer  g_p
+00403004 : static int i s_i
+00403000 : global int i g_i
+
+004013c5 : static function addresss
+004013c0 : function address
+
+.............................................................
+
+0028ff1c : local const int c
+0028ff18 : local char pointer str
+0028ff14 : local int l_i
+0028ff10 : local int pointer p_i
+0028ff08 : local int pointer pp_i
+0028ff0c : local int pointer p_i2
+0028ff04 : local int pointer p_i3
+0028ff00 : array end address
+000a7a84 : array start address
+
+.............................................................
+
+00000000 : global char pointer point content g_pu
