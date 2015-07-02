@@ -81,8 +81,16 @@ int main()
 
 	/* 申请 cufft 句柄*/
 	cufftHandle plan_Nfft_Many; // 创建cuFFT句柄
-	int number_Nfft[1] = { Nfft };
-	cufftPlanMany(&plan_Nfft_Many, 1, number_Nfft, number_Nfft, NXWITH0, 1, number_Nfft, NXWITH0, 1, CUFFT_C2C, NX);
+	const int rank = 1; // 一维 fft
+	int n[rank] = { Nfft }; // 进行 fft 的信号的长度为 Nfft
+	int inembed[1] = { 0 }; // 输入数据的[页数，列数，行数]
+	int onembed[1] = { 10 }; // 输出数据的[页数，列数，行数]
+	int istride = NXWITH0; // 每个输入信号相邻两个元素的距离
+	int idist = 1; // 每两个输入信号第一个元素的距离
+	int ostride = NXWITH0; // 每个输出信号相邻两个元素的距离
+	int odist = 1; // 每两个输出信号第一个元素的距离
+	int batch = NX; // 进行 fft 的信号个数
+	cufftPlanMany(&plan_Nfft_Many, rank, n, inembed, istride, idist, onembed, ostride, odist, CUFFT_C2C, batch);
 
 	/* 核心部份 */
 
