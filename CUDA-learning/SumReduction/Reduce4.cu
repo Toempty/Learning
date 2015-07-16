@@ -116,7 +116,7 @@ float RuntimeOfReduce4(float *fMatrix_Host, const int iRow, const int iCol)
 	cudaEventDestroy(start_GPU);
 	cudaEventDestroy(end_GPU);
 
-	std::cout << "GPU的运行时间为：" << elaspsedTime << "ms." << std::endl;
+	std::cout << "Reduce4 的运行时间为：" << elaspsedTime << "ms." << std::endl;
 
 	HANDLE_ERROR(cudaFree(fMatrix_Device));// 释放显存空间
 

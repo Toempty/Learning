@@ -43,7 +43,7 @@ float RuntimeOfReduceThrust(float *fMatrix_Host, const int iRow, const int iCol)
 	cudaEventDestroy(start_GPU);
 	cudaEventDestroy(end_GPU);
 
-	std::cout << "GPU的运行时间为：" << elaspsedTime << "ms." << std::endl;
+	std::cout << "ReduceThrust 的运行时间为：" << elaspsedTime << "ms." << std::endl;
 
 	cudaFree(fMatrix_Device);
 
